@@ -1,7 +1,7 @@
 # Проект «Киноман»
 
 * Студент: [Даниил Мамай](https://up.htmlacademy.ru/ecmascript/17/user/1898815).
-* Наставник: `Николай Думчев`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol-fw).
 
 ---
 
