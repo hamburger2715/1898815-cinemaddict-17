@@ -1,7 +1,7 @@
 import {createElement} from '../render.js';
 
-const createFilmDescriptionPopupTemplate = () => (`
-<section class="film-details">
+const createFilmDescriptionPopupTemplate = () => (
+  `<section class="film-details">
   <form class="film-details__inner" action="" method="get">
     <div class="film-details__top-container">
       <div class="film-details__close">
@@ -164,8 +164,7 @@ const createFilmDescriptionPopupTemplate = () => (`
       </section>
     </div>
   </form>
-</section>
-`);
+</section>`);
 export default class FilmDescriptionPopupView {
   getTemplate() {
     return createFilmDescriptionPopupTemplate();
