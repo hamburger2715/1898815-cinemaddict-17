@@ -1,7 +1,7 @@
-import { getRandomInteger } from "../util.js";
-import { EMOTIONS } from "../const.js";
+import { getRandomInteger } from '../util.js';
+import { EMOTIONS } from '../const.js';
 
-const generateComment = () => ({
+export const generateComment = () => ({
   id: 42,
   author: '',
   comment: '',
