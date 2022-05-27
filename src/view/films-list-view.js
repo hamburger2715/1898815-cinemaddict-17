@@ -6,6 +6,7 @@ const createFilmsListTemplate = () => (
     <div class="films-list__container"></div>
   </section>`
 );
+
 export default class FilmsListView {
   getTemplate () {
     return createFilmsListTemplate();

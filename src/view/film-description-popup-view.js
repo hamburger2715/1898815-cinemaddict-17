@@ -164,7 +164,9 @@ const createFilmDescriptionPopupTemplate = () => (
       </section>
     </div>
   </form>
-</section>`);
+</section>`
+);
+
 export default class FilmDescriptionPopupView {
   getTemplate() {
     return createFilmDescriptionPopupTemplate();
