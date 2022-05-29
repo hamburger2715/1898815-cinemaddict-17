@@ -4,7 +4,7 @@ import FilmStatisticsView from './view/film-statistics-view.js';
 import NavigationView from './view/navigation-view.js';
 import SortView from './view/sort-view.js';
 import FilmsPresenter from './presenter/films-presenter.js';
-import FilmsModel from './model/flms-model.js';
+import FilmsModel from './model/films-model.js';
 
 const siteHeaderElement = document.querySelector('.header');
 const siteMainElement = document.querySelector('.main');
