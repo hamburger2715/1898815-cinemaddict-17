@@ -1,5 +1,12 @@
+import dayjs from 'dayjs';
 import { getRandomInteger, getRandomElements, getRandomFloat } from '../util.js';
 import { TITLES, POSTERS, DIRECTORS, COUNTRIES, GENRES, ACTORS, WRITERS } from './const.js';
+
+const generateDate = (unit) => {
+  const gap = getRandomInteger(1, 30);
+
+  return dayjs().subtract(gap, unit).toDate();
+};
 
 const  generateFilm = () => ({
   id : 0,
@@ -14,7 +21,7 @@ const  generateFilm = () => ({
     writers: getRandomElements( WRITERS, 3),
     actors: getRandomElements( ACTORS, 3),
     release: {
-      date: '2019-05-11T00:00:00.000Z',
+      date: generateDate('year'),
       releaseCountry: COUNTRIES[getRandomInteger(0, COUNTRIES.length - 1)]
     },
     runtime: getRandomInteger(45, 180),
@@ -22,11 +29,11 @@ const  generateFilm = () => ({
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet varius magna, non porta ligula feugiat eget. Fusce tristique felis at fermentum pharetra. Aliquam id orci ut lectus varius viverra. Nullam nunc ex, convallis sed finibus eget',
   },
   userDetails: {
-    watchlist: getRandomInteger(),
-    alreadyWatched: getRandomInteger(),
-    watchingDate: '2019-04-12T16:12:32.554Z',
-    favorite: getRandomInteger(),
+    watchlist: Boolean(getRandomInteger()),
+    alreadyWatched: Boolean(getRandomInteger()),
+    watchingDate: generateDate('month'),
+    favorite: Boolean(getRandomInteger()),
   },
 });
 
-export {generateFilm};
+export {generateFilm, generateDate};
